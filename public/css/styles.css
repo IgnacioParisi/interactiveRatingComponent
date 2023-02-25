@@ -1,0 +1,147 @@
+* {
+    font-family: 'Overpass', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+}
+
+main {
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-image: radial-gradient(circle at top, hsl(213, 20%, 18%), hsl(213, 20%, 12%));
+    padding: 20px;
+    max-width: 336px;
+    border-radius: 20px;
+}
+
+.card-active {
+    display: flex;
+    flex-direction: column; 
+}
+
+.star-icon {
+    padding: 12px;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 18%);
+}
+
+.card-active h1 {
+    color: hsl(0, 0%, 100%);
+    margin: 16px auto;
+}
+
+.card-active p {
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+}
+
+.rating-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 24px 0;
+}
+
+.rating-btn {
+    /* border: red solid 1px; */
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: hsl(210, 19%, 18%);
+    color: hsl(217, 12%, 63%);
+    height: 32px;
+    width: 32px;
+    padding: 22px;
+}
+
+.rating-btn:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+.rating-btn:focus {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+
+#cta-btn {
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 1.8px;
+}
+
+#cta-btn:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    font-weight: 700;
+}
+
+
+/*----- Thank you State -----*/
+
+.card-thanks {
+    display: none;
+    text-align: center;
+}
+
+.selected-value {
+    color: hsl(25, 97%, 53%);
+    font-size: 15px;
+    font-weight: normal;
+    width: fit-content;
+    margin: 16px auto;
+    padding: 8px 10px 6px;
+    border-radius: 20px;
+    background-color: hsl(210, 19%, 18%);
+}
+
+.card-thanks h1 {
+    color: hsl(0, 0%, 100%);
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.card-thanks p {
+    color: hsl(216, 12%, 54%);
+    font-size: 15px;
+}
+
+.review-img {
+    margin-top: 10px;
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 380px;
+        padding: 28px;
+        border-radius: 25px;
+    }
+
+    .star-icon {
+        margin-bottom: 8px;
+    }
+
+    .rating-wrapper {
+        margin: 26px 0;
+    }
+
+    .rating-btn {
+        padding: 24px;
+        font-size: 16px;
+    }
+}
